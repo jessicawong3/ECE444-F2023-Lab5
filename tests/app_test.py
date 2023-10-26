@@ -39,6 +39,15 @@ def test_index(client):
     assert response.status_code == 200
 
 
+def test_search(client):
+    response = client.get('/search/?query=test')
+    assert response.status_code == 200
+
+def test_search_no_query(client):
+    response = client.get('/search/')
+    assert response.status_code == 200
+
+
 def test_database(client):
     """initial test. ensure that the database exists"""
     tester = Path("test.db").is_file()
