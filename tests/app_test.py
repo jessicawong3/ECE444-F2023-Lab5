@@ -1,5 +1,5 @@
-import os
-import pytest, json
+import pytest
+import json
 from pathlib import Path
 
 from project.app import app, db
@@ -40,11 +40,12 @@ def test_index(client):
 
 
 def test_search(client):
-    response = client.get('/search/?query=test')
+    response = client.get("/search/?query=test")
     assert response.status_code == 200
 
+
 def test_search_no_query(client):
-    response = client.get('/search/')
+    response = client.get("/search/")
     assert response.status_code == 200
 
 
