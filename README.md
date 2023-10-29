@@ -1,5 +1,13 @@
 # ECE444-F2023-Lab5
 
+## Test Cases in Group Project
+Test cases for the posting page: 
+- def test_posting_page_rendering(client)
+- def test_posting_complete_submission(client)
+- def test_posting_required_submission(client)
+
+https://github.com/ECE444-2023Fall/project-1-web-application-design-group19-webcrafters/blob/a131645231ac149b4b9831c459cc06758f7d1ae3/tests/betula_test.py#L100-L144
+
 ## Pros and Cons of TDD
 
 ### Pros
